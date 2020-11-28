@@ -15,7 +15,7 @@ $(document).keypress(function (event){
 setInterval(function (){ 
   if(parseInt($(".blade").css("left"))>=425&&parseInt($(".blade").css("left"))<=475&&
   parseInt($(".ninja").css("top"))>=225){
-    $("h1").text("Game Over, your Score is "+c);
+    $("h1").text("Game Over, your Score is "+c-1);
     $(".blade").removeClass("attack").addClass("hidden");
   }
 },1)
