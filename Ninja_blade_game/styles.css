@@ -1,0 +1,43 @@
+body{
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+.ninja{
+  background-image: url("ninja.png");
+  background-size: cover;
+  height:50px;
+  width:50px;
+  position:absolute;
+  top:250px;
+  left:425px;
+}
+.jump{
+  animation: jump 1s;
+}
+@keyframes jump {
+50%{
+  top:175px;
+  background-image: url("rolling_ninja.png");
+  background-size: cover;
+  height:40px;
+  width:40px;
+}
+to{
+  transform:rotate(360deg);
+}
+}
+.blade{
+  width:20px;
+  position: absolute;
+  top:275px;
+  left:925px;
+}
+.attack{
+  animation:attack 1.5s infinite;
+}
+@keyframes attack {
+  to{
+    left:350px;
+    transform:rotate(1080deg);
+  }
+}
